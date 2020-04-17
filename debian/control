@@ -1,0 +1,11 @@
+Source: mint-live-session
+Section: admin
+Priority: optional
+Maintainer: Linux Mint <root@linuxmint.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: mint-live-session
+Architecture: all
+Description: A collection of files used in the live session
+ Live session files.
