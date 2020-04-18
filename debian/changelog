@@ -1,3 +1,9 @@
+mint-live-session (1.0.1) ulyana; urgency=medium
+
+  * Fix XDG autostart file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 18 Apr 2020 15:58:58 +0100
+
 mint-live-session (1.0.0) ulyana; urgency=medium
 
   * Initial release
