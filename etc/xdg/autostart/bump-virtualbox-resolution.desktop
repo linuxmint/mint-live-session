@@ -7,3 +7,4 @@ Exec=bump-virtualbox-resolution
 Terminal=false
 Type=Application
 StartupNotify=false
+X-MATE-Autostart-Delay=10
