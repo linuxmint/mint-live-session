@@ -1,3 +1,9 @@
+mint-live-session (1.0.2) ulyana; urgency=medium
+
+  * bump-vbox-res: Add a 10s delay in MATE
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 10 Jun 2020 12:54:39 +0100
+
 mint-live-session (1.0.1) ulyana; urgency=medium
 
   * Fix XDG autostart file
