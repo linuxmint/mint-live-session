@@ -1,3 +1,9 @@
+mint-live-session (1.0.3) ulyana; urgency=medium
+
+  * Add a delay in Cinnamon as well
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Jun 2020 14:01:14 +0100
+
 mint-live-session (1.0.2) ulyana; urgency=medium
 
   * bump-vbox-res: Add a 10s delay in MATE
