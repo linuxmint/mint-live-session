@@ -1,25 +1,26 @@
 #!/usr/bin/python3
 import subprocess
-
+import os
 import gi
 gi.require_version('Gdk', '3.0')
 from gi.repository import Gdk
 
-out = subprocess.run(["xrandr"], capture_output=True).stdout.decode()
+try:
+    if os.getenv("XDG_SESSION_TYPE") == "x11":
+        out = subprocess.run(["xrandr"], capture_output=True).stdout.decode()
 
-outlines = out.split("\n")
-output = None
+        outlines = out.split("\n")
+        output = None
 
-for line in outlines:
-    if ("Virtual" in line) and ("primary" in line):
-        output = line.partition(" ")[0]
+        for line in outlines:
+            if ("Virtual" in line) and ("primary" in line):
+                output = line.partition(" ")[0]
 
-monitor = Gdk.Display.get_default().get_primary_monitor()
-geo = monitor.get_geometry()
-
-if output:
-    print("Found virtual display: %s" % output)
-
-    if geo.height < 768:
-        subprocess.run(["xrandr", "--output", output, "--mode", "1024x768"])
-
+        if output:
+            print("Found virtual display: %s" % output)
+            monitor = Gdk.Display.get_default().get_primary_monitor()
+            geo = monitor.get_geometry()
+            if geo.height < 768:
+                subprocess.run(["xrandr", "--output", output, "--mode", "1024x768"])
+except Exception as e:
+    print("Exception in bump-virtualbox-resolution:", e)
