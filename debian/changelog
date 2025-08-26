@@ -1,3 +1,9 @@
+mint-live-session (1.0.4) zara; urgency=medium
+
+  * bump-virtualbox-resolution: Fix crash in wayland
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Aug 2025 16:23:18 +0200
+
 mint-live-session (1.0.3) ulyana; urgency=medium
 
   * Add a delay in Cinnamon as well
