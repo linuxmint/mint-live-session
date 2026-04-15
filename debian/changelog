@@ -1,3 +1,9 @@
+mint-live-session (1.0.5) unstable; urgency=medium
+
+  * Mint: Add live-installer desktop file to the desktop/
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 15 Apr 2026 11:45:54 +0100
+
 mint-live-session (1.0.4) zara; urgency=medium
 
   * bump-virtualbox-resolution: Fix crash in wayland
