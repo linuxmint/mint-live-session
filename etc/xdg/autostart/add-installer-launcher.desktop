@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Add installer launcher
+Comment=Add the installer launcher to the desktop
+Icon=live-installer
+Exec=add-installer-launcher
+Terminal=false
+Type=Application
+StartupNotify=false

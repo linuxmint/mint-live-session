@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import os
+
+try:
+    print("Running add-installer-launcher...")
+    desktop_file = "/usr/share/applications/debian-installer-launcher.desktop"
+    if os.path.exists(desktop_file) and os.path.exists("/usr/share/doc/ubuntu-system-adjustments/copyright"):
+        print("Mint ISO with live-installer detected")
+        os.system(f"cp {desktop_file} /home/mint/Desktop/")
+except Exception as e:
+    print("Exception in add-installer-launcher:", e)
