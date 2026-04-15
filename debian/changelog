@@ -1,3 +1,9 @@
+mint-live-session (1.0.6) unstable; urgency=medium
+
+  * Make the desktop file executable
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 15 Apr 2026 12:29:23 +0100
+
 mint-live-session (1.0.5) unstable; urgency=medium
 
   * Mint: Add live-installer desktop file to the desktop/
