@@ -1,3 +1,9 @@
+mint-live-session (1.0.7) adrien; urgency=medium
+
+  * Create ~/Desktop in the live-session before moving the installer into it
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Nov 2026 12:09:42 +0000
+
 mint-live-session (1.0.6) unstable; urgency=medium
 
   * Make the desktop file executable
